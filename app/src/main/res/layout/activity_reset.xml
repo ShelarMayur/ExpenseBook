@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@drawable/login_page_background"
+    android:layout_height="match_parent"
+    tools:context=".ResetActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:text="Reset Password"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etUserLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/reset_email"
+            android:gravity="center"
+            android:maxLength="35"
+            android:background="@drawable/login_credentials"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_margin="15dp"
+            android:layout_height="70dp"
+            android:hint="Username"
+            android:textColorHint="@color/white"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/reset_btn"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/black"
+        android:layout_margin="15dp"
+        android:text="Reset"
+        android:textStyle="bold"
+        android:textAppearance="?android:textAppearanceButton"
+        />
+    <Button
+        android:id="@+id/cancel_btn"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/black"
+        android:layout_margin="15dp"
+        android:text="Cancel"
+        android:textStyle="bold"
+        android:textAppearance="?android:textAppearanceButton"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:text="1. Enter mail-id.\n2. Click on Reset.\n3. An email will be sent to reset password.\n4. Check spam if not found in primary inbox.
+\n5. Click the link and reset your password.\n6. Go back to login screen."
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        />
+
+
+</LinearLayout>

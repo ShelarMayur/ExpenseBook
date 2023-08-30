@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_page_background"
+    android:elevation="15dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="20dp"
+    tools:context=".CalculatorActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="15dp"
+        app:cardCornerRadius="20dp"
+        android:elevation="20dp"
+        app:cardElevation="20dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:padding="10dp"
+                android:text="@string/calculator"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="40sp"
+                android:typeface="monospace" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/display"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom|end"
+                    android:background="@color/black"
+                    android:ellipsize="start"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="bottom|end"
+                    android:padding="25dp"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:textStyle="normal"
+                    android:typeface="sans" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="bottom"
+                android:background="@color/black"
+                android:layout_weight="2"
+                android:gravity="center">
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"
+                    android:columnCount="4"
+                    android:rowCount="5">
+
+                    <Button
+                        android:id="@+id/C"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/black"
+                        android:onClick="btnClearClicked"
+                        android:text="@string/c"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/modulo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/black"
+                        android:onClick="btnModuloClicked"
+                        android:text="@string/modulo"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/X"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/black"
+                        android:onClick="btnClearOneClicked"
+                        android:text="x"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        />
+
+                    <Button
+                        android:id="@+id/divide"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/black"
+                        android:onClick="btnDivideClicked"
+                        android:text="@string/divide"
+                        android:textColor="@color/teal_200"
+                        android:textSize="20sp"                        />
+
+                    <Button
+                        android:id="@+id/seven"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/black"
+                        android:onClick="btnSevenClicked"
+                        android:text="@string/_7"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        />
+
+                    <Button
+                        android:id="@+id/eight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/black"
+                        android:onClick="btnEightClicked"
+                        android:text="@string/_8"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        />
+                    <Button
+                        android:id="@+id/nine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/black"
+                        android:onClick="btnNineClicked"
+                        android:text="@string/_9"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        />
+
+                    <Button
+                        android:id="@+id/multiply"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/black"
+                        android:onClick="btnMultiplyClicked"
+                        android:text="@string/multiply"
+                        android:textColor="@color/teal_200"
+                        android:textSize="20sp"
+                        />
+
+                    <Button
+                        android:id="@+id/four"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/black"
+                        android:onClick="btnFourClicked"
+                        android:text="@string/_4"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/five"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/black"
+                        android:onClick="btnFiveClicked"
+                        android:text="@string/_5"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/six"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/black"
+                        android:onClick="btnSixClicked"
+                        android:text="@string/_6"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/minus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/black"
+                        android:onClick="btnMinusClicked"
+                        android:text="@string/minus"
+                        android:textColor="@color/teal_200"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/black"
+                        android:onClick="btnOneClicked"
+                        android:text="@string/_1"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/black"
+                        android:onClick="btnTwoClicked"
+                        android:text="@string/_2"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/black"
+                        android:onClick="btnThreeClicked"
+                        android:text="@string/_3"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/plus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/black"
+                        android:onClick="btnPlusClicked"
+                        android:text="@string/plus"
+                        android:textColor="@color/teal_200"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/double_zero"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/black"
+                        android:onClick="btnDoubleZeroClicked"
+                        android:text="@string/_00"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/zero"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/black"
+                        android:onClick="btnZeroClicked"
+                        android:text="@string/_0"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/point"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/black"
+                        android:onClick="btnPointClicked"
+                        android:text="@string/point"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/equals"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/black"
+                        android:onClick="btnEqualsClicked"
+                        android:text="@string/equals"
+                        android:textColor="@color/teal_200"
+                        android:textSize="20sp" />
+
+                </GridLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

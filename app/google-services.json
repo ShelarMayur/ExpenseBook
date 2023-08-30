@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "210288116428",
+    "project_id": "expensebook-c5247",
+    "storage_bucket": "expensebook-c5247.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:210288116428:android:ae65244f115e0b7ec8b869",
+        "android_client_info": {
+          "package_name": "com.mayurshelar.theexpensebook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "210288116428-22hs7kjcok9gdsr5fa92svsoukaqqaqc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCchJt-u-T-SJ310htGylHWqsi9utRmSs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "210288116428-22hs7kjcok9gdsr5fa92svsoukaqqaqc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

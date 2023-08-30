@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/profile"
+        android:title="@string/profit"
+        android:icon="@drawable/baseline_account_circle_24"
+        />
+
+    <item
+        android:id="@+id/debt"
+        android:title="Debt"
+        android:icon="@drawable/baseline_monetization_on_24"/>
+
+    <item
+        android:id="@+id/note"
+        android:title="Note"
+        android:icon="@drawable/baseline_note_24"/>
+
+    <item
+        android:id="@+id/savings"
+        android:title="Savings"
+        android:icon="@drawable/baseline_savings_24"/>
+
+    <item
+        android:id="@+id/tools"
+        android:title="Tools"
+        android:icon="@drawable/baseline_build_24"/>
+
+    <item
+        android:id="@+id/features"
+        android:title="Features"
+        android:icon="@drawable/twotone_more_24"/>
+
+    <item
+        android:id="@+id/logout"
+        android:title="@string/logout"
+        android:icon="@drawable/baseline_logout_24"
+        />
+
+
+
+</menu>

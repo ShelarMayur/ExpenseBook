@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_page_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".DashboardFragment">
+    
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:elevation="10dp"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/black"
+        app:cardElevation="5dp"
+        android:layout_height="wrap_content">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="#4CAF50"
+                        android:text="Income" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="#D60F0F"
+                        android:text="Expense" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="7dp"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:id="@+id/income_set_result"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="#4CAF50"
+                        android:text="0" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/expense_set_result"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="#D60F0F"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        
+    </androidx.cardview.widget.CardView>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/login_page_background"
+        android:layout_height="match_parent">
+        
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        </ScrollView>
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="150dp"
+            android:layout_marginEnd="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expense"
+                android:id="@+id/expense_ft_text"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:visibility="invisible"
+                android:textAppearance="?android:textAppearance"
+                />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/expense_ft_btn"
+                android:layout_gravity="bottom|end"
+                android:backgroundTint="#07bca4"
+                android:elevation="6dp"
+                app:fabSize="mini"
+                android:visibility="invisible"
+                app:pressedTranslationZ="12dp"
+                android:src="@drawable/round_money_off_24"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="90dp">
+
+            <TextView
+                android:id="@+id/income_ft_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:padding="5dp"
+                android:text="Income"
+                android:textAppearance="?android:textAppearance"
+                android:visibility="invisible" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/income_ft_btn"
+                android:layout_gravity="bottom|end"
+                android:elevation="6dp"
+                app:fabSize="mini"
+                app:pressedTranslationZ="12dp"
+                android:visibility="invisible"
+                android:src="@drawable/baseline_attach_money_24"
+                />
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fb_main_plus_btn"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="20dp"
+            app:fabSize="normal"
+            android:src="@drawable/baseline_add_24"/>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</LinearLayout>

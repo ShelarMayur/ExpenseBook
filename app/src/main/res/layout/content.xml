@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:background="@drawable/login_page_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_marginBottom="?attr/actionBarSize"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bnView"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="@color/black"
+        android:background="@drawable/login_page_background"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/nav_items"
+        />
+
+</RelativeLayout>
