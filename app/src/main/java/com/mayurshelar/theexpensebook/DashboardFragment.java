@@ -206,6 +206,7 @@ public class DashboardFragment extends Fragment {
         });
     }
 
+    //To insert income data.
     public void incomeDataInsert() {
 
         AlertDialog.Builder myDialog = new AlertDialog.Builder(getActivity());
