@@ -41,4 +41,9 @@
     <string name="point">.</string>
     <string name="equals">=</string>
     <string name="enter_amount">Enter Amount</string>
+    <string name="principal_amount">Principal Amount</string>
+    <string name="currency_calculator">Currency Calculator</string>
+    <string name="monthly_deposit">Monthly Deposit</string>
+    <string name="months">Months</string>
+    <string name="annual_interest_rate">Annual Interest Rate(%)</string>
 </resources>

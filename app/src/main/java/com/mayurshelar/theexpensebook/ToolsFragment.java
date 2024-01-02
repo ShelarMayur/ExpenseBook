@@ -52,6 +52,13 @@ public class ToolsFragment extends Fragment {
                 startActivity(new Intent(getActivity(), RatesActivity.class));
             }
         });
+
+        interestCalculator.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), InterestCalculatorActivity.class));
+            }
+        });
         return myView;
     }
 }
