@@ -45,6 +45,13 @@ public class ToolsFragment extends Fragment {
                 startActivity(new Intent(getActivity(), TipCalculatorActivity.class));
             }
         });
+
+        currencyCalculator.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), RatesActivity.class));
+            }
+        });
         return myView;
     }
 }
